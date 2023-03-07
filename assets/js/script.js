@@ -108,7 +108,7 @@ const slideNext = function () {
   updateSliderPos();
 }
 
-heroSliderNextBtn.addEventListener("click", slideNext);
+// heroSliderNextBtn.addEventListener("click", slideNext);
 
 const slidePrev = function () {
   if (currentSlidePos <= 0) {
@@ -120,7 +120,7 @@ const slidePrev = function () {
   updateSliderPos();
 }
 
-heroSliderPrevBtn.addEventListener("click", slidePrev);
+// heroSliderPrevBtn.addEventListener("click", slidePrev);
 
 /**
  * auto slide

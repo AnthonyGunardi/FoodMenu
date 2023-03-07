@@ -9,9 +9,9 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Grilli - Amazing & Delicious Food</title>
-  <meta name="title" content="Grilli - Amazing & Delicious Food">
-  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+  <title>Amazing & Delicious Food</title>
+  <meta name="title" content="Amazing & Delicious Food">
+  <meta name="description" content="Amazing & Delicious Food Menu">
 
   <!-- 
     - favicon
@@ -28,14 +28,14 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style-food.css">
 
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <!-- <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg"> -->
 
 </head>
 
@@ -181,7 +181,7 @@
 
           <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
 
-          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">mictransformer.dev@gmail.com</a>
 
           <div class="separator"></div>
 
@@ -200,11 +200,11 @@
         <span class="text text-2" aria-hidden="true">Find A Table</span>
       </a>
 
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+      <!-- <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <span class="line line-1"></span>
         <span class="line line-2"></span>
         <span class="line line-3"></span>
-      </button>
+      </button> -->
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -228,16 +228,16 @@
           <br>
           <p class="section-subtitle text-center label-2">Special Selection</p>
 
-          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+          <h2 class="headline-1 section-title text-center">Foods</h2>
 
           <ul class="grid-list">
             <form action="#">
             <li>
-              <input type="radio" name="choice" id="choose-1" value="1"/>
-              <label for="choose-1">
+              <input type="radio" name="food" id="food-1" value="Greek Salad"/>
+              <label for="food-1">
                 <div class="menu-card hover:card">
 
-                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100; width: 100px; height: 100px;">
                     <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
                       class="img-cover">
                   </figure>
@@ -245,7 +245,7 @@
                   <div>
                     <div class="title-wrapper">
                       <h3 class="title-3">
-                        <a href="#" class="card-title" style="text-align:center;">Greek Salad</a>
+                        <a class="card-title" style="text-align:center;">Greek Salad</a>
                       </h3>
                     </div>
   
@@ -259,8 +259,8 @@
             </li>
 
             <li>
-              <input type="radio" name="choice" id="choose-2" value="2"/>
-              <label for="choose-2">
+              <input type="radio" name="food" id="food-2" value="Lasagne"/>
+              <label for="food-2">
                 <div class="menu-card hover:card">
 
                   <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
@@ -272,7 +272,7 @@
 
                     <div class="title-wrapper">
                       <h3 class="title-3" style="text-align:center;">
-                        <a href="#" class="card-title">Lasagne</a>
+                        <a class="card-title">Lasagne</a>
                       </h3>
 
                     </div>
@@ -288,126 +288,315 @@
             </li>
 
             <li>
-              <div class="menu-card hover:card">
+              <input type="radio" name="food" id="food-3" value="Butternut Pumpkin"/>
+              <label for="food-3">
+                <div class="menu-card hover:card">
 
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
-                    class="img-cover">
-                </figure>
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                      class="img-cover">
+                  </figure>
 
-                <div>
+                  <div>
 
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Butternut Pumpkin</a>
-                    </h3>
+                    <div class="title-wrapper">
+                      <h3 class="title-3" style="text-align:center;">
+                        <a class="card-title">Butternut Pumpkin</a>
+                      </h3>
 
-                    <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1" style="text-align:center;">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                    </p>
+                    <br>
+
                   </div>
 
-                  <p class="card-text label-1">
-                    Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
-                  </p>
-
                 </div>
-
-              </div>
+              </label>
             </li>
 
             <li>
-              <div class="menu-card hover:card">
+              <input type="radio" name="food" id="food-4" value="Tokusen Wagyu"/>
+              <label for="food-4">
+                <div class="menu-card hover:card">
 
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
-                    class="img-cover">
-                </figure>
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                      class="img-cover">
+                  </figure>
 
-                <div>
+                  <div>
 
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Tokusen Wagyu</a>
-                    </h3>
+                    <div class="title-wrapper">
+                      <h3 class="title-3" style="text-align:center;">
+                        <a class="card-title">Tokusen Wagyu</a>
+                      </h3>
+                    </div>
 
-                    <span class="badge label-1">New</span>
+                    <p class="card-text label-1" style="text-align:center;">
+                      Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                    </p>
+                    <br>
 
-                    <span class="span title-2">$39.00</span>
                   </div>
 
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
-                  </p>
-
                 </div>
-
-              </div>
+              </label>
             </li>
 
             <li>
-              <div class="menu-card hover:card">
+              <input type="radio" name="food" id="food-5" value="Olivas Relenas"/>
+              <label for="food-5">
+                <div class="menu-card hover:card">
 
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
-                    class="img-cover">
-                </figure>
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                      class="img-cover">
+                  </figure>
 
-                <div>
+                  <div>
 
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Olivas Rellenas</a>
-                    </h3>
+                    <div class="title-wrapper">
+                      <h3 class="title-3" style="text-align:center;">
+                        <a class="card-title">Olivas Rellenas</a>
+                      </h3>
+                    </div>
 
-                    <span class="span title-2">$25.00</span>
+                    <p class="card-text label-1" style="text-align:center;">
+                      Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                    </p>
+                    <br>
+
                   </div>
 
-                  <p class="card-text label-1">
-                    Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
-                  </p>
-
                 </div>
-
-              </div>
+              </label>
             </li>
 
             <li>
-              <div class="menu-card hover:card">
+              <input type="radio" name="food" id="food-6" value="Opu Fish"/>
+              <label for="food-6">
+                <div class="menu-card hover:card">
 
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
-                    class="img-cover">
-                </figure>
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                      class="img-cover">
+                  </figure>
 
-                <div>
+                  <div>
 
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
+                    <div class="title-wrapper" style="text-align:center;">
+                      <h3 class="title-3">
+                        <a class="card-title">Opu Fish</a>
+                      </h3>
+                    </div>
 
-                    <span class="span title-2">$49.00</span>
+                    <p class="card-text label-1" style="text-align:center;">
+                      Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                    </p>
+                    <br>
+
                   </div>
 
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
-                  </p>
+                </div>
+              </label>
+            </li>
+            </form>
+
+          </ul>
+
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Drinks</h2>
+
+          <ul class="grid-list">
+            <form action="#">
+            <li>
+              <input type="radio" name="drink" id="drink-1" value="Greek Salad"/>
+              <label for="drink-1">
+                <div class="menu-card hover:card">
+
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                      class="img-cover">
+                  </figure>
+  
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a class="card-title" style="text-align:center;">Greek Salad</a>
+                      </h3>
+                    </div>
+  
+                    <p class="card-text label-1" style="text-align:center;">
+                      Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                    </p>
+                    <br>
+                  </div>
+                </div>
+              </label>              
+            </li>
+
+            <li>
+              <input type="radio" name="drink" id="drink-2" value="Lasagne"/>
+              <label for="drink-2">
+                <div class="menu-card hover:card">
+
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne"
+                      class="img-cover">
+                  </figure>
+
+                  <div>
+
+                    <div class="title-wrapper">
+                      <h3 class="title-3" style="text-align:center;">
+                        <a class="card-title">Lasagne</a>
+                      </h3>
+
+                    </div>
+
+                    <p class="card-text label-1" style="text-align:center;">
+                      Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                    </p>
+                    <br>
+                  </div>
 
                 </div>
+              </label>
+            </li>
 
-              </div>
+            <li>
+              <input type="radio" name="drink" id="drink-3" value="Butternut Pumpkin"/>
+              <label for="drink-3">
+                <div class="menu-card hover:card">
+
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                      class="img-cover">
+                  </figure>
+
+                  <div>
+
+                    <div class="title-wrapper">
+                      <h3 class="title-3" style="text-align:center;">
+                        <a class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                    </div>
+
+                    <p class="card-text label-1" style="text-align:center;">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                    </p>
+                    <br>
+
+                  </div>
+
+                </div>
+              </label>
+            </li>
+
+            <li>
+              <input type="radio" name="drink" id="drink-4" value="Tokusen Wagyu"/>
+              <label for="drink-4">
+                <div class="menu-card hover:card">
+
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                      class="img-cover">
+                  </figure>
+
+                  <div>
+
+                    <div class="title-wrapper">
+                      <h3 class="title-3" style="text-align:center;">
+                        <a class="card-title">Tokusen Wagyu</a>
+                      </h3>
+                    </div>
+
+                    <p class="card-text label-1" style="text-align:center;">
+                      Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                    </p>
+                    <br>
+
+                  </div>
+
+                </div>
+              </label>
+            </li>
+
+            <li>
+              <input type="radio" name="drink" id="drink-5" value="Olivas Rellenas"/>
+              <label for="drink-5">
+                <div class="menu-card hover:card">
+
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                      class="img-cover">
+                  </figure>
+
+                  <div>
+
+                    <div class="title-wrapper">
+                      <h3 class="title-3" style="text-align:center;">
+                        <a class="card-title">Olivas Rellenas</a>
+                      </h3>
+                    </div>
+
+                    <p class="card-text label-1" style="text-align:center;">
+                      Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                    </p>
+                    <br>
+
+                  </div>
+
+                </div>
+              </label>
+            </li>
+
+            <li>
+              <input type="radio" name="drink" id="drink-6" value="Opu Fish"/>
+              <label for="drink-6">
+                <div class="menu-card hover:card">
+
+                  <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                    <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                      class="img-cover">
+                  </figure>
+
+                  <div>
+
+                    <div class="title-wrapper" style="text-align:center;">
+                      <h3 class="title-3">
+                        <a class="card-title">Opu Fish</a>
+                      </h3>
+                    </div>
+
+                    <p class="card-text label-1" style="text-align:center;">
+                      Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                    </p>
+                    <br>
+
+                  </div>
+
+                </div>
+              </label>
             </li>
             </form>
 
           </ul>
 
           <p class="menu-text text-center">
-            During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+            Silahkan memilih makanan dan minuman anda, kemudian klik tombol <span class="span">Submit</span> di bawah.
           </p>
 
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View All Menu</span>
+          <a class="btn btn-primary" onclick="submitHandler()">
+            <span class="text text-1">Submit</span>
 
-            <span class="text text-2" aria-hidden="true">View All Menu</span>
+            <span class="text text-2" aria-hidden="true">Submit</span>
           </a>
 
           <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
@@ -419,11 +608,6 @@
       </section>
 
 
-
-
-
-
-
   <!-- 
     - #BACK TO TOP
   -->
@@ -433,13 +617,11 @@
   </a>
 
 
-
-
-
   <!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
 
   <!-- 
     - ionicon link
@@ -447,6 +629,25 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+      let food = document.getElementsByName('food');
+      let drink = document.getElementsByName('drink');
+      let foodChoice, drinkChoice;
+
+      function submitHandler() {
+        for(i = 0; i < food.length; i++) {
+          if(food[i].checked) {
+            foodChoice = drink[i].value;
+          }
+        }
+        for(i = 0; i < drink.length; i++) {
+          if(drink[i].checked) {
+            drinkChoice = drink[i].value;
+          }
+        }
+        console.log(`food: ${foodChoice}, drink: ${drinkChoice}`)
+      }
+  </script>
 </body>
 
 </html>

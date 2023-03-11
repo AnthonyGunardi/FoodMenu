@@ -562,17 +562,19 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <script>
-      let userId = localStorage.getItem('userId');
-      let name = localStorage.getItem('name');
-      let email = localStorage.getItem('email');
-      let wa_number = localStorage.getItem('wa_number');
-      let doneSubmit = localStorage.getItem('doneSubmit');
-      let food = document.getElementsByName('food');
-      let drink = document.getElementsByName('drink');
-      let wa_cut = wa_number.slice(1);
-      let foodChoice, drinkChoice, url;
-
       function submitHandler() {
+        let userId = localStorage.getItem('userId');
+        let name = localStorage.getItem('name');
+        let email = localStorage.getItem('email');
+        let wa_number = localStorage.getItem('wa_number');
+        let doneSubmit = localStorage.getItem('doneSubmit');
+        let food = document.getElementsByName('food');
+        let drink = document.getElementsByName('drink');
+        let wa_cut = wa_number.slice(1);
+        let foodChoice = '';
+        let drinkChoice = '';
+        let url = '';
+
         if (doneSubmit) {
           alert('Anda sudah pernah memilih menu. Silahkan hubungi panitia untuk mengganti pilihan menu.');
         } 
@@ -601,6 +603,7 @@
             })
         }
       }
+
   </script>
 </body>
 
